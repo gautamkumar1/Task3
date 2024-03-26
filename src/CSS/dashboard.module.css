@@ -1,145 +1,152 @@
-/* Styles for the main dashboard container */
 .main_dashboard {
-  max-height: 100vh; /* Maximum height of 100% viewport height */
-  max-width: 100%; /* Maximum width of 100% */
+  max-height: 100vh;
+  max-width: 100%;
 }
 
-/* Styles for the left dashboard section */
 .left_dashboard {
-  border-right: 2px solid rgb(240, 240, 240); /* Border on the right side */
-  max-height: 93vh; /* Maximum height of 93% viewport height */
-  background: rgb(255, 255, 255); /* Background color */
-  display: flex; /* Flex layout */
-  flex-direction: column; /* Vertical stacking */
-  justify-content: space-between; /* Spacing between items */
-  overflow-y: scroll; /* Allowing vertical scroll */
+  border-right: 2px solid rgb(240, 240, 240);
+  max-height: 93vh;
+  background: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow-y: scroll;
 }
 
-/* Styles for the logo */
 #logo {
-  color: black; /* Text color */
-  font-weight: 500; /* Font weight */
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif; /* Font family */
+  color: black;
+  font-weight: 500;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
-/* Styles for the services header */
 .services_header {
-  display: flex; /* Flex layout */
-  gap: 10px; /* Spacing between items */
-  border-bottom: 1px solid rgba(232, 232, 232, 0.803); /* Border at the bottom */
-  margin-top: 5%; /* Top margin */
-  margin-left: 5%; /* Left margin */
-  color: gray; /* Text color */
-  align-items: center; /* Aligning items vertically */
+  display: flex;
+  gap: 10px;
+  border-bottom: 1px solid rgba(232, 232, 232, 0.803);
+  margin-top: 5%;
+  margin-left: 5%;
+  color: gray;
+  align-items: center;
 }
 
-/* Styles for the tabs section */
 .tabs_section {
-  display: flex; /* Flex layout */
-  flex-direction: column; /* Vertical stacking */
-  gap: 3px; /* Spacing between items */
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
 }
 
-/* Styles for individual tabs */
 .tab {
-  color: rgb(38, 38, 38); /* Text color */
-  display: flex; /* Flex layout */
-  align-items: center; /* Aligning items vertically */
-  padding: 10px; /* Padding */
-  padding-left: 10%; /* Left padding */
+  color: rgb(38, 38, 38);
+  display: flex;
+  align-items: center;
+  /* min-height: 2.5vw; */
+  /* gap: 10px; */
+  /* font-size:; */
+  padding: 10px;
+  padding-left: 10%;
+}
+.dashboardbox {
+  color: rgb(38, 38, 38);
+  display: flex;
+  align-items: start;
+  /* min-height: 2.5vw; */
+  /* gap: 10px; */
+  padding: 10px;
+  padding-left: 10%;
 }
 
-/* Styles for active tab */
 .tab.active {
-  background-color: rgb(230, 247, 255); /* Background color */
-  border-right: 3px solid rgb(24, 144, 255); /* Right border */
-  color: rgb(24, 144, 255); /* Text color */
-  border-radius: 3px; /* Border radius */
-  cursor: pointer; /* Cursor style */
+  background-color: rgb(230, 247, 255);
+  border-right: 3px solid rgb(24, 144, 255);
+  color: rgb(24, 144, 255);
+  border-radius: 3px;
+  cursor: pointer;
 }
 
-/* Styles for tab text */
 .tab > p {
-  font-size: 12px; /* Font size */
-  font-family: Public_Sans; /* Font family */
+  font-size: 12px;
+  font-family: Public_Sans;
 }
 
-/* Hover styles for tabs */
 .tab:hover {
-  background-color: rgb(230, 247, 255); /* Background color */
-  border-radius: 3px; /* Border radius */
-  cursor: pointer; /* Cursor style */
+  background-color: rgb(230, 247, 255);
+  border-radius: 3px;
+  cursor: pointer;
 }
 
-/* Styles for the right dashboard section */
+/*  for right dashboard  */
 .right_dashboard {
-  max-height: 93vh; /* Maximum height of 93% viewport height */
-  width: 82.5vw; /* Default width for medium and large devices */
-  margin: 0%; /* Margin */
+  max-height: 93vh;
+  width: 82.5vw; /* default width for medium and large devices */
+  margin: 0%;
 }
 
-/* Adjusting width for small devices */
+/* Adjust width for small devices */
 @media (max-width: 600px) {
   .right_dashboard {
-    width: 100vw; /* Width for small devices */
+    width: 100vw;
   }
 }
 
-/* Styles for the display dashboard */
+/* above css is such that when the device is small then the width is 100vw */
+
 .display_dashboard {
-  margin: auto; /* Centering the element horizontally */
-  background: #fff; /* Background color */
-  margin-top: 1%; /* Top margin */
-  border-radius: 5px; /* Border radius */
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; /* Box shadow */
-  padding: 20px; /* Padding */
+  margin: auto;
+  background: #fff;
+  margin-top: 1%;
+
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 20px;
 }
 
-/* Styles for the dashboard navigation bar */
+/*  navbar */
 .dashboard_nav {
-  z-index: 1; /* Z-index */
-  justify-content: space-between; /* Spacing between items */
-  align-items: center; /* Aligning items vertically */
-  box-shadow: rgba(0, 0, 0, 0.9) 0px 0.3px 0.2px; /* Box shadow */
-  width: 82.5vw; /* Width */
+  /* height: 7vh; */
+  /* border-bottom: 2px solid rgb(240, 240, 240); */
+  /* display: flex; */
+  z-index: 1;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 2px; */
+  /* background: yellow; */
+  /* background: #fff; */
+  box-shadow: rgba(0, 0, 0, 0.9) 0px 0.3px 0.2px;
+  width: 82.5vw;
 }
 
-/* Styles for premium card */
+/*  card css  */
+/* premiumCard.module.css */
+
 .roundedCard {
-  width: 80vw; /* Width */
-  margin: 2%; /* Margin */
-  border-radius: 15px; /* Border radius */
-  background-color: rgba(0, 0, 0, 0.9); /* Background color */
-  display: flex; /* Flex layout */
+  width: 80vw;
+  margin: 2%;
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
 }
-
-/* Adjusting styles for small devices */
 @media (max-width: 600px) {
   .roundedCard {
-    width: 98vw; /* Width */
-    margin: 1%; /* Margin */
-    border-radius: 15px; /* Border radius */
-    background-color: rgba(0, 0, 0, 0.9); /* Background color */
-    display: flex; /* Flex layout */
+    width: 98vw;
+    margin: 1%;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
   }
 }
-
-/* Styles for left content of the premium card */
 .cardContentLeft {
-  flex: 1; /* Flex property */
-  color: white; /* Text color */
-  font-weight: 300; /* Font weight */
+  flex: 1;
+  color: white;
+  font-weight: 300;
 }
 
-/* Styles for right content of the premium card */
 .cardContentRight {
-  flex: 1; /* Flex property */
-  display: flex; /* Flex layout */
-  justify-content: center; /* Centering content horizontally */
-  align-items: center; /* Aligning items vertically */
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/* Styles for unlock button */
 .unlockButton {
-  background-color: #ffffff; /* Background color */
+  background-color: #ffffff;
 }
