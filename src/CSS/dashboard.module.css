@@ -1,0 +1,145 @@
+/* Styles for the main dashboard container */
+.main_dashboard {
+  max-height: 100vh; /* Maximum height of 100% viewport height */
+  max-width: 100%; /* Maximum width of 100% */
+}
+
+/* Styles for the left dashboard section */
+.left_dashboard {
+  border-right: 2px solid rgb(240, 240, 240); /* Border on the right side */
+  max-height: 93vh; /* Maximum height of 93% viewport height */
+  background: rgb(255, 255, 255); /* Background color */
+  display: flex; /* Flex layout */
+  flex-direction: column; /* Vertical stacking */
+  justify-content: space-between; /* Spacing between items */
+  overflow-y: scroll; /* Allowing vertical scroll */
+}
+
+/* Styles for the logo */
+#logo {
+  color: black; /* Text color */
+  font-weight: 500; /* Font weight */
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif; /* Font family */
+}
+
+/* Styles for the services header */
+.services_header {
+  display: flex; /* Flex layout */
+  gap: 10px; /* Spacing between items */
+  border-bottom: 1px solid rgba(232, 232, 232, 0.803); /* Border at the bottom */
+  margin-top: 5%; /* Top margin */
+  margin-left: 5%; /* Left margin */
+  color: gray; /* Text color */
+  align-items: center; /* Aligning items vertically */
+}
+
+/* Styles for the tabs section */
+.tabs_section {
+  display: flex; /* Flex layout */
+  flex-direction: column; /* Vertical stacking */
+  gap: 3px; /* Spacing between items */
+}
+
+/* Styles for individual tabs */
+.tab {
+  color: rgb(38, 38, 38); /* Text color */
+  display: flex; /* Flex layout */
+  align-items: center; /* Aligning items vertically */
+  padding: 10px; /* Padding */
+  padding-left: 10%; /* Left padding */
+}
+
+/* Styles for active tab */
+.tab.active {
+  background-color: rgb(230, 247, 255); /* Background color */
+  border-right: 3px solid rgb(24, 144, 255); /* Right border */
+  color: rgb(24, 144, 255); /* Text color */
+  border-radius: 3px; /* Border radius */
+  cursor: pointer; /* Cursor style */
+}
+
+/* Styles for tab text */
+.tab > p {
+  font-size: 12px; /* Font size */
+  font-family: Public_Sans; /* Font family */
+}
+
+/* Hover styles for tabs */
+.tab:hover {
+  background-color: rgb(230, 247, 255); /* Background color */
+  border-radius: 3px; /* Border radius */
+  cursor: pointer; /* Cursor style */
+}
+
+/* Styles for the right dashboard section */
+.right_dashboard {
+  max-height: 93vh; /* Maximum height of 93% viewport height */
+  width: 82.5vw; /* Default width for medium and large devices */
+  margin: 0%; /* Margin */
+}
+
+/* Adjusting width for small devices */
+@media (max-width: 600px) {
+  .right_dashboard {
+    width: 100vw; /* Width for small devices */
+  }
+}
+
+/* Styles for the display dashboard */
+.display_dashboard {
+  margin: auto; /* Centering the element horizontally */
+  background: #fff; /* Background color */
+  margin-top: 1%; /* Top margin */
+  border-radius: 5px; /* Border radius */
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; /* Box shadow */
+  padding: 20px; /* Padding */
+}
+
+/* Styles for the dashboard navigation bar */
+.dashboard_nav {
+  z-index: 1; /* Z-index */
+  justify-content: space-between; /* Spacing between items */
+  align-items: center; /* Aligning items vertically */
+  box-shadow: rgba(0, 0, 0, 0.9) 0px 0.3px 0.2px; /* Box shadow */
+  width: 82.5vw; /* Width */
+}
+
+/* Styles for premium card */
+.roundedCard {
+  width: 80vw; /* Width */
+  margin: 2%; /* Margin */
+  border-radius: 15px; /* Border radius */
+  background-color: rgba(0, 0, 0, 0.9); /* Background color */
+  display: flex; /* Flex layout */
+}
+
+/* Adjusting styles for small devices */
+@media (max-width: 600px) {
+  .roundedCard {
+    width: 98vw; /* Width */
+    margin: 1%; /* Margin */
+    border-radius: 15px; /* Border radius */
+    background-color: rgba(0, 0, 0, 0.9); /* Background color */
+    display: flex; /* Flex layout */
+  }
+}
+
+/* Styles for left content of the premium card */
+.cardContentLeft {
+  flex: 1; /* Flex property */
+  color: white; /* Text color */
+  font-weight: 300; /* Font weight */
+}
+
+/* Styles for right content of the premium card */
+.cardContentRight {
+  flex: 1; /* Flex property */
+  display: flex; /* Flex layout */
+  justify-content: center; /* Centering content horizontally */
+  align-items: center; /* Aligning items vertically */
+}
+
+/* Styles for unlock button */
+.unlockButton {
+  background-color: #ffffff; /* Background color */
+}
